@@ -8,7 +8,7 @@ import ru.ifmo.se.pokemon.*;
 public class Main {
 
 	public static void main(String[] args) {
-		System.out.println("Привет! Набери покемонов в первую команду.");
+		System.out.println("Привет! Набери покемонов в первую команду (или пустые строки для авто).");
 		System.out.println("Введи тип, имя и уровень покемона через пробел, и пустую строку когда закончишь набор.");
 		System.out.println("Типы покемонов:\n1. Phione\n2. Yungoos\n3. Gumshoos\n4. Swinub\n5. Piloswine\n6. Mamoswine");
 		
@@ -17,13 +17,14 @@ public class Main {
 		addPokemonsToBattle(bat, true);
 		System.out.println("Теперь набери покемонов во вторую команду.");
 		addPokemonsToBattle(bat, false);
-
+		
 		bat.go();
 
 	}
 	
 	public static void addPokemonsToBattle(Battle bat, boolean isAlly) {
 		Scanner sc = new Scanner(System.in);
+		int count = 0;
 		while(true) {
 			String enter = sc.nextLine();
 			if(enter.isEmpty())
@@ -55,7 +56,8 @@ public class Main {
 					case 4 -> bat.addAlly(new Swinub(name, level));
 					case 5 -> bat.addAlly(new Piloswine(name, level));
 					case 6 -> bat.addAlly(new Mamoswine(name, level));
-					default -> System.out.println("Такого покемона не существует, попробуй еще раз");
+					default -> {System.out.println("Такого покемона не существует, попробуй еще раз");
+						count--;}
 				}
 			else
 				switch (id) {
@@ -65,10 +67,25 @@ public class Main {
 					case 4 -> bat.addFoe(new Swinub(name, level));
 					case 5 -> bat.addFoe(new Piloswine(name, level));
 					case 6 -> bat.addFoe(new Mamoswine(name, level));
-					default -> System.out.println("Такого покемона не существует, попробуй еще раз");
+					default -> {System.out.println("Такого покемона не существует, попробуй еще раз");
+						count--;}
 			}
 		}
-		sc.close();
+		if(count == 0) {
+			System.out.println("Ты не указал ни одного покемона. Автоматически добавлено 3");
+			if(isAlly) {
+				bat.addAlly(new Phione("Фион", 50));
+				bat.addAlly(new Gumshoos("Гамшус", 50));
+				bat.addAlly(new Piloswine("Папа Свин", 50));
+			}
+			else {
+				bat.addFoe(new Yungoos("Гусь", 50));
+				bat.addFoe(new Swinub("Свин", 50));
+				bat.addFoe(new Mamoswine("Мама Свин", 50));
+			}
+		}
+		if(!isAlly)
+			sc.close();
 	}
 
 }
