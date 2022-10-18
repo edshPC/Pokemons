@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_o9TDkE5VEe2TQafOiGieag" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_o9TDkU5VEe2TQafOiGieag" source="codegen">
         <details xmi:id="_o9TDkk5VEe2TQafOiGieag" key="codegenDirectory" value="/Pokemons/src"/>
-        <details xmi:id="_pBp_IE5VEe2TQafOiGieag" key="AssociatedSourceCode" value="/Pokemons/src/main/Functions.java;1947846975/1;/Pokemons/src/main/Main.java;3917682019/1;/Pokemons/src/moves/physical/Bulldoze.java;937844343/1;/Pokemons/src/moves/physical/Crunch.java;3771718863/1;/Pokemons/src/moves/physical/Facade.java;2436202895/1;/Pokemons/src/moves/physical/RockSlide.java;3237890912/1;/Pokemons/src/moves/physical/StoneEdge.java;3799049606/1;/Pokemons/src/moves/physical/Tackle.java;3447807146/1;/Pokemons/src/moves/special/IceBeam.java;1546119140/1;/Pokemons/src/moves/special/MudSlap.java;3129823594/1;/Pokemons/src/moves/special/PowderSnow.java;3625393206/1;/Pokemons/src/moves/status/AcidArmor.java;1031250493/1;/Pokemons/src/moves/status/Amnesia.java;1077265371/1;/Pokemons/src/moves/status/DoubleTeam.java;2413466645/1;/Pokemons/src/pokemons/Gumshoos.java;1833806055/1;/Pokemons/src/pokemons/Mamoswine.java;3192537813/1;/Pokemons/src/pokemons/Phione.java;2846845602/1;/Pokemons/src/pokemons/Piloswine.java;3806745655/1;/Pokemons/src/pokemons/Swinub.java;1680950167/1;/Pokemons/src/pokemons/Yungoos.java;3472255252/1;"/>
+        <details xmi:id="_pBp_IE5VEe2TQafOiGieag" key="AssociatedSourceCode" value="/Pokemons/src/main/Functions.java;1947846975/1;/Pokemons/src/main/Main.java;797586770/1;/Pokemons/src/moves/physical/Bulldoze.java;937844343/1;/Pokemons/src/moves/physical/Crunch.java;3771718863/1;/Pokemons/src/moves/physical/Facade.java;2436202895/1;/Pokemons/src/moves/physical/RockSlide.java;3237890912/1;/Pokemons/src/moves/physical/StoneEdge.java;3799049606/1;/Pokemons/src/moves/physical/Tackle.java;3447807146/1;/Pokemons/src/moves/special/IceBeam.java;1546119140/1;/Pokemons/src/moves/special/MudSlap.java;3129823594/1;/Pokemons/src/moves/special/PowderSnow.java;3625393206/1;/Pokemons/src/moves/status/AcidArmor.java;1031250493/1;/Pokemons/src/moves/status/Amnesia.java;1077265371/1;/Pokemons/src/moves/status/DoubleTeam.java;2413466645/1;/Pokemons/src/pokemons/Gumshoos.java;1833806055/1;/Pokemons/src/pokemons/Mamoswine.java;3192537813/1;/Pokemons/src/pokemons/Phione.java;2846845602/1;/Pokemons/src/pokemons/Piloswine.java;3806745655/1;/Pokemons/src/pokemons/Swinub.java;1680950167/1;/Pokemons/src/pokemons/Yungoos.java;3472255252/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_o8zUUE5VEe2TQafOiGieag">
@@ -186,6 +186,7 @@
 					default -> {System.out.println(&quot;Такого покемона не существует, попробуй еще раз&quot;);&#xD;
 						count--;}&#xD;
 			}&#xD;
+			count++;&#xD;
 		}&#xD;
 		if(count == 0) {&#xD;
 			System.out.println(&quot;Ты не указал ни одного покемона. Автоматически добавлено 3&quot;);&#xD;

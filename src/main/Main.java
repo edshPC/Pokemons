@@ -70,6 +70,7 @@ public class Main {
 					default -> {System.out.println("Такого покемона не существует, попробуй еще раз");
 						count--;}
 			}
+			count++;
 		}
 		if(count == 0) {
 			System.out.println("Ты не указал ни одного покемона. Автоматически добавлено 3");

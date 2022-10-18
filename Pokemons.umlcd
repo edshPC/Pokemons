@@ -58,6 +58,9 @@
     </sourceRole>
     <targetRole xmi:id="_pRtif05XEe2TQafOiGieag" aggregationKind="NONE" name="contents" navigable="true">
       <modelElement href="Pokemons.uml#_DDbCck5XEe2TQafOiGieag"/>
+      <stereotypes xmi:id="_wuOvAE6yEe2qupQuE6OPAA" name="Array">
+        <modelElement href="Pokemons.uml#_DDbpgE5XEe2TQafOiGieag"/>
+      </stereotypes>
       <visibility xmi:id="_pRtigE5XEe2TQafOiGieag" label="+"/>
       <cardinality xmi:id="_pRtigU5XEe2TQafOiGieag" label="1" max="1" min="1"/>
     </targetRole>
@@ -95,6 +98,9 @@
     </sourceRole>
     <targetRole xmi:id="_pRxM2E5XEe2TQafOiGieag" aggregationKind="NONE" name="contents" navigable="true">
       <modelElement href="Pokemons.uml#_DDbpgk5XEe2TQafOiGieag"/>
+      <stereotypes xmi:id="_wuVcsE6yEe2qupQuE6OPAA" name="Array">
+        <modelElement href="Pokemons.uml#_DDbpg05XEe2TQafOiGieag"/>
+      </stereotypes>
       <visibility xmi:id="_pRxz5E5XEe2TQafOiGieag" label="+"/>
       <cardinality xmi:id="_pRxz405XEe2TQafOiGieag" label="1" max="1" min="1"/>
     </targetRole>
@@ -881,9 +887,9 @@
     </attributes>
     <attributes xmi:id="_pRtijk5XEe2TQafOiGieag" name="contents" staticAttribute="true">
       <modelElement href="Pokemons.uml#_DDbCck5XEe2TQafOiGieag"/>
-      <stereotypes xmi:id="_pRtij05XEe2TQafOiGieag" name="Array">
-        <modelElement href="Pokemons.uml#_DDbpgE5XEe2TQafOiGieag"/>
-      </stereotypes>
+      <stereotypes xmi:id="_wv_CgE6yEe2qupQuE6OPAA" name="Array"/>
+      <stereotypes xmi:id="_wwDT8E6yEe2qupQuE6OPAA" name="Array"/>
+      <stereotypes xmi:id="_wwagUE6yEe2qupQuE6OPAA" name="Array"/>
       <visibility xmi:id="_pRtikE5XEe2TQafOiGieag" label="+"/>
       <cardinality xmi:id="_pRtikU5XEe2TQafOiGieag" label="1" max="1" min="1"/>
       <type xmi:id="_pRtikk5XEe2TQafOiGieag" name="Object">
@@ -984,9 +990,9 @@
     </attributes>
     <attributes xmi:id="_pRxz7k5XEe2TQafOiGieag" name="contents" staticAttribute="true">
       <modelElement href="Pokemons.uml#_DDbpgk5XEe2TQafOiGieag"/>
-      <stereotypes xmi:id="_pRxz705XEe2TQafOiGieag" name="Array">
-        <modelElement href="Pokemons.uml#_DDbpg05XEe2TQafOiGieag"/>
-      </stereotypes>
+      <stereotypes xmi:id="_wwHlYE6yEe2qupQuE6OPAA" name="Array"/>
+      <stereotypes xmi:id="_wwJakE6yEe2qupQuE6OPAA" name="Array"/>
+      <stereotypes xmi:id="_wwbucE6yEe2qupQuE6OPAA" name="Array"/>
       <visibility xmi:id="_pRxz8E5XEe2TQafOiGieag" label="+"/>
       <cardinality xmi:id="_pRxz8U5XEe2TQafOiGieag" label="1" max="1" min="1"/>
       <type xmi:id="_pRxz8k5XEe2TQafOiGieag" name="Object">
